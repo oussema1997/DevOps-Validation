@@ -6,8 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    def mvnHome = ${M2_HOME}
-                    sh "${mvnHome}/bin/mvn clean install"
+                     sh 'mvn clean install'
                 }
             }
         }
